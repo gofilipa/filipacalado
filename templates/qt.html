@@ -1,0 +1,43 @@
+{%extends "base.html"%}
+
+{%block head%}
+
+{%endblock%}
+
+{%block body%}
+{%include "nav.html"%}
+
+<div class="container">
+    <div class="row">
+        <h2>Queer Tools</h2>
+        <p>
+            My dissertation, <i>"Since No Expressions Do": Queer Tools for Reading, Editing, and Archiving Literature</i> explores how digital methods and tools for studying text engage with queer literature. I critique digital methods and tools by exploring how computation, which disambiguates and fixes data for electronic processing, might be used to analyze the complexity of queerness expressed in textual style, form, and voice. While tools like quantitative text analysis reduce semantic complexity in verbal expressions of gender, sexuality, and race into data that can be counted and computed by the machine, I demonstrate how this reduction can open up possibilities for interpreting the formal qualities of queer literature. Drawing from the lessons of Queer Studies, I re-deploy digital tools to analyze queer identity and its relationship to racialized experience in narrative structures and figurative elements. In turn, this computational experimentation enables scholars to critique how Queer Studies grapples with the relationship between sexuality, gender, and race within hegemonic power structures.
+
+        </p>
+        <p>
+            This project employs an experimental format to serve as a teaching guide for non-experts in technology. Each chapter is supplemented with a small digital project that demonstrates how to use a particular digital tool aimed toward educators who want to incorporate these tools into their teaching.
+        </p>
+    </div>
+    <br>
+    <div class="row">
+        <h2>Text Analysis</h2>
+        <p>
+            My first chapter, "'A Melon, an Emerald, a Fox in the Snow': Quantifying Gender in Virginia Woolf's <i>Orlando: A Biography</i>, examines how computational text analysis grapples with gender ontology in Woolf's novel, which features a transgender protagonist. The chapter begins by tracing how quantitative methods in Literary Studies perpetuate assumptions about gender as binary. I contrast this "reproducible" approach with more experimental ones which deconstruct social categories like gender and race. To propose my own method, I draw connections between programming and gender theory, focusing on the principle of iteration that drives cleaning and quantification tasks in programming software like python. I then move to Judith Butler's concept of gender performativity, which posits how gender expression might subvert traditional social structures through repeatedly “performing” gender constraints in ways that deviate from the norm. Taking this shared quality of iteration between python and gender, I propose a text analysis methodology that interweaves, or iterates through, distant and close reading. Turning to Woolf's text, I then demonstrate how this method of text analysis leads to a plurality of significations for gender terms in the novel which suggest how language and gender are closely coordinated and mutually constructed. I conclude by considering the limitations of this method, which poses gender as a discursive phenomenon, and its place within a larger trajectory of Gender Studies since Butler's text inaugurating the field.
+        </p>
+        <p>    
+            See the digital component of this project on the "<a href="https://github.com/gofilipa/qdr">Queer Distant Reading</a>" Github repository.
+        </p>
+    </div>
+    <div class="row">
+        <h2>TEI Encoding</h2>
+        <p>
+            My second chapter, "'Where there is Spectacular Passion, they would Suggest Something Vile': Encoding Queer Erasure in Oscar Wilde's <i>The Picture of Dorian Gray</i>" consists of two parts: the first explores the Text Encoding Initiative (TEI) standard, an electronic editing tool that allows researchers to "mark up," or tag, textual elements, to encode the homoerotic elements that Wilde edited during his revisions of Dorian Gray (1890). My analysis in this section finds that the TEI works best with data which is discrete rather than smooth, and I propose custom editorial workflow that surfaces moments of plurality and permeability in the text's homoerotic elements. Then, in my second section, I delve deeper into the mutually reinforcing nature of dominance structures across data formats and text encoding practices. Here, I draw from Queer of Color's Critique on Queer Studies and Black Feminist scholarship on the archive of slavery to re-think editorial practices. I close by highlighting examples of current projects that deploy collaborative and minimalist practices to challenge the structuring modes of textual editing and the TEI.
+        </p>
+        <p>   
+            See a customized rendering of the manuscript's first chapter <a href="https://gofilipa.github.io/dorian_encoded/">first chapter</a> and access the XML/TEI files on the "<a href="https://gofilipa.github.io/dorian_encoded/">Dorian Encoded</a>" Github repository.
+        </p>
+    </div>
+</div>
+
+{%endblock%}
+ 
