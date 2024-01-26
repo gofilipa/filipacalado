@@ -1,0 +1,122 @@
+{%extends "base.html"%}
+
+{%block head%}
+
+{%endblock%}
+
+{%block body%}
+{%include "nav.html"%}
+
+<div class="container">
+     <div class="row">
+        <h2>Gender Bias in
+        AI: <a href='https://github.com/gofilipa/trans_bias'>Anti-Trans
+        Legislation</a>
+        and <a href='https://github.com/gofilipa/trans_bias'>homo-generator</a></h2>
+        <p>
+            These two projects use machine learning technology to examine
+            gender bias in language.
+
+	    The first project is a text classification model
+	    fine-tuned from the
+             <a href='https://translegislation.com/'>anti-trans
+            legislation</a> that is currently proliferating across the
+            US. From this legislation, which I scraped and processed
+            from government records, I extract definitions for gender
+            and related terms, with the goal of scoring language about
+            gender on a scale from affirming to non-affirming.
+
+	    The second project is a text generation model, the
+	    "homo-generator," fine-tuned on the
+	    <a href='https://homosaurus.org/'>Homosaurus
+	    vocabulary</a>.
+
+        </p>
+
+	<p> Both projects are still in development, and you
+            may <a href='https://github.com/gofilipa/trans_bias'>learn
+            more about them on Github</a>.</p>
+    </div>
+    <br>
+
+        <div class="row">
+        <h2>Tutorial: <a href='https://gofilipa.github.io/python-for-text/'>Python
+        for Working with Text</a></h2>
+        <p>
+            This online workshop series teaches Python programming
+            from an ethical and feminist approach to working with text
+            data. It begins with foundations of programming and
+            proceeds to data gathering (with web scraping), and text
+            analysis. Future units are currently being developed on
+            text generation with machine learning.
+
+        </p>
+    </div>
+    <br>
+
+    <div class="row">
+        <h2>"Queer Tools For Studying Literature"</h2>
+        <p>
+            My dissertation, <i>"Since No Expressions Do": Queer Tools
+            for Studying Literature</i> explores how digital methods
+            and tools for studying text engage with queer literature
+            via Queer Studies frameworks. I critique digital methods
+            and tools by exploring how computation, which
+            disambiguates and fixes data for electronic processing,
+            might be used to analyze the complexity of queerness
+            expressed in textual style, form, and voice.
+
+	    <a href='https://github.com/gofilipa/qt/blob/master/qt_writings/since.docx'>Download
+	    the dissertation here</a>.
+        </p>
+        <p>
+            Below are two small digital projects that demonstrate in
+            practice how one might digital tools to work within Queer
+            Studies frameworks.
+        </p>
+    </div>
+    
+    <br>
+    <div class="row">
+        <h2>Queer Distant Reading (<a href='https://github.com/gofilipa/qdr'>qdr</a>)</h2>
+        <p>
+            This project draws connections between programming logics
+            and gender theory to propose a text analysis methodology
+            that iterates through distant and close reading. Using
+            Virginia Woolf's novel, <i>Orlando: A Biography</i>
+            (1928), as a test case, I demonstrate how this method of
+            text analysis leads from a binary understanding of gender
+            into a plurality of gender significations in the novel,
+            suggesting how language and gender are mutually
+            constructed.
+        </p>
+        <p>    
+            See the digital component of this project on the "<a href="https://github.com/gofilipa/qdr">Queer Distant Reading</a>" Github repository.
+        </p>
+    </div>
+    <br>
+    <div class="row">
+        <h2>Queer Text Encoding (<a href='https://github.com/gofilipa/qte'>qte</a>)</h2>
+        <p>
+            This project uses the Text Encoding Initiative (TEI)
+            standard, an electronic editing tool, to encode the
+            homoerotic elements that Oscar Wilde edited while
+            composing his novel, <i>The Picture of Dorian
+            Gray</i>. (1890). It explores the mutually reinforcing
+            nature of TEI's hierarchical structure and of dominance
+            structures in archival data and practices.
+
+	    See a customized rendering of the
+            manuscript's <a href="https://gofilipa.github.io/qte/">first
+            chapter</a> and access
+            the <a href="https://github.com/gofilipa/qte/blob/main/tei.xml">XML/TEI
+            files </a>.
+
+	    
+        </p>
+
+    </div>
+</div>
+
+{%endblock%}
+ 
