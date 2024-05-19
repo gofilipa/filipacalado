@@ -5,14 +5,15 @@ app = Flask(__name__)
 
 PASSPHRASE = "mariafernanda"
 
-# what if we alternated mine and hers?
-def generate_text(text):
-    for line in text:
-        for letter in line:
-            yield letter
-            print(end='')
-            time.sleep(0.1)  # Adjust the delay (in seconds) here
-        yield('<br>')
+### MOVED BELOW 
+# def generate_text(text):
+#     for line in text:
+#         for letter in line:
+#             yield letter
+#             print(end='')
+#             time.sleep(0.1)  # Adjust the delay (in seconds) here
+#         yield('<br>')
+### MOVED BELOW
 
 # adding a password protection
 def password_prompt(message):
@@ -51,9 +52,21 @@ def print_text():
         if request.form['password'] != PASSPHRASE:
             return password_prompt("Invalid password, try again.")
         else:
+            # nesting a generator within an outer function to help
+            # streaming?
+            # https://www.pythonanywhere.com/forums/topic/28503/ 
+            def generate_text(text):
+                for line in text:
+                    for letter in line:
+                        yield letter
+                        print(end='')
+                        time.sleep(0.1)  # Adjust the delay (in
+                        # seconds) here
+                    yield('<br>')
             response = Response(stream_with_context(generate_text(text_to_print)))
     response.headers['X-Accel-Buffering'] = 'no'
     return response
+
 
 if __name__ == '__main__':
     app.run(debug=True)
