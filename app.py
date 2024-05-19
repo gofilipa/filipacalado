@@ -6,6 +6,7 @@ app = Flask(__name__)
 PASSPHRASE = "mariafernanda"
 
 # what if we alternated mine and hers?
+@stream_with_context
 def generate_text(text):
     for line in text:
         for letter in line:
