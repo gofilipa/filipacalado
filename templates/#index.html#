@@ -8,7 +8,7 @@
 <!-- Start jumbotron -->
 <div class="jumbotron">
     <h1>Filipa Calado explores how digital tools affect textual
-    meaning and form. She is an Assistant Professor of Information
+    meaning and forms. She is an Assistant Professor of Information
     Studies at Pratt Institute in New York City. Her
     current <a href="{{url_for('research')}}">research</a> examines
     bias and discrimination in machine learning. See

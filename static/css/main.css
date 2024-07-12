@@ -5,29 +5,39 @@
     color: hsl(0, 3%, 94%);
     font-weight: bold;
     // -webkit-text-stroke: .1px black;
+}
+
+ .jumbotron a:hover {
+    background-color: #fa8072 ;
   }
-  
-  p, li {
-    font-family: 'Muli', sans-serif;
-  }
-  
+
   h1 {
     font-family: 'Muli', sans-serif;
     font-weight: bold;
     font-style: italic;
   }
+
+/*
+  p, li {
+      font-family: 'Muli', sans-serif;
+  }
+  
+
+
+  i {
+    font-weight: normal !important
+  }
+  */
   
   a {
-    font-family: 'Muli', sans-serif;
+    /* font-family: 'Muli', sans-serif; */
     color:#1f11a0;
   }
   
-  .jumbotron a:hover {
-    background-color: #fa8072 ;
-  }
+ 
   
   h2 {
-    font-family: 'Muli', sans-serif;
+    /* font-family: 'Muli', sans-serif; */
     color: #972929;
   }
   

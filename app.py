@@ -1,7 +1,10 @@
 from flask import Flask, render_template, render_template_string, request
+# from flaskext.markdown import Markdown
 import time
 
 app = Flask(__name__)
+
+# Markdown(app)
 
 PASSPHRASE = "mariafernanda"
 
@@ -22,6 +25,10 @@ def password_prompt(message):
                   <input type="password" id="password" name="password" value=""><br>
                   <input type="submit" value="Submit">
                 </form>'''
+
+@app.route('/test')
+def test():
+    return render_template('test.html')
 
 @app.route('/')
 def index():
